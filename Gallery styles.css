@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Romans', sans-serif;
+}
+body{
+  background: black;
+}
+nav{
+  background: blue;
+  padding: 5px 40px;
+  flex-basis: 50%;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 4;
+}
+nav ul li.items:after{
+  position: !important;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: orange;
+  opacity: 0;
+}
+nav ul li.items:hover:after{
+  opacity: 2;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .10s;
+}
+nav ul li:hover a{
+  color: darkred;
+}
+.gallery{
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap:30px ;
+}
+.gallery img{
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.gallery img:hover{
+  transform: scale(0.5) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow:0 32px 75px rgba(68,77,136, 0.2);
+}
+.gallery video{
+   width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap:30px ;
+  transition: 0.5s;
+}
+.gallery video:hover{
+  transform: scale(0.5) rotate(-20deg);
+  border-radius: 20px;
+  box-shadow:0 32px 75px rgba(68,77,136,0.2);
+}
+.div-3{
+            background-color: orange;
+            color: black;
+            text-decoration-color: blue;
+            text-align: center;
+            padding: 50px;
+            clear: both;
+            width: 100%;
+            text-align: center;
+            flex-basis: 50%;
+            bottom: 0;
+        }
+
+.div-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+  font-size: 30px;
+  margin: 10px;
+  color: white;
+}
+        button:hover {
+            background-color: #4CAF50;
+        }
